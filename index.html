@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Currency Exchanger</title>
+  </head>
+  <body>
+    <h1>Currency Exchanger</h1>
+    <h2>All Symbols</h2>
+    <ul class="symbols-list"></ul>
+    <label for="from-cur">Convert from (enter 3 character symbol): </label>
+    <input type="text" name="from-cur" id="from-cur" />
+    <label for="to-cur">Convert to (enter 3 character symbol): </label>
+    <input type="text" name="to-cur" id="to-cur" />
+    <label for="amount-to-convert">Amount to convert: </label>
+    <input
+      type="number"
+      name="amount-to-convert"
+      id="amount-to-convert"
+      min="0"
+    />
+    <button class="submit-conversion">Submit</button>
+    <span class="conversion-output"></span>
+    <script src="./script.js"></script>
+  </body>
+</html>
